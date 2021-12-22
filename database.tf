@@ -6,7 +6,7 @@ resource oci_database_db_system "DB001005" {
   #backup_subnet_id = <<Optional value not found in discovery>>
   #cluster_name = <<Optional value not found in discovery>>
   compartment_id          = var.compartment_ocid
-  cpu_core_count          = "2"
+  cpu_core_count          = "1"
   data_storage_percentage = "80"
   data_storage_size_in_gb = "256"
   database_edition        = "ENTERPRISE_EDITION_HIGH_PERFORMANCE"
@@ -68,7 +68,7 @@ resource oci_database_db_system "DB001005" {
   node_count = "1"
   #nsg_ids = <<Optional value not found in discovery>>
   #private_ip = <<Optional value not found in discovery>>
-  shape  = "VM.Standard2.2"
+  shape  = "VM.Standard2.1"
   source = "NONE"
   #source_db_system_id = <<Optional value not found in discovery>>
   #sparse_diskgroup = <<Optional value not found in discovery>>
@@ -91,9 +91,9 @@ resource oci_database_pluggable_database export_pluggable_database_1 {
   }
   freeform_tags = {
   }
-  #pdb_admin_password = <<Optional value not found in discovery>>
+  pdb_admin_password = "DBsggT-#T56t"
   pdb_name = "DB001005_pdb1"
   #should_pdb_admin_account_be_locked = <<Optional value not found in discovery>>
-  #tde_wallet_password = <<Optional value not found in discovery>>
+  tde_wallet_password = "DBsggT-#T56t"
 }
 
