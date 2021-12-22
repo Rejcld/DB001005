@@ -85,7 +85,7 @@ resource oci_database_db_system "DB001005" {
   }
 }
 
-resource oci_database_pluggable_database export_pluggable_database_1 {
+resource oci_database_pluggable_database "DB001005_pdb1" {
   container_database_id = "ocid1.database.oc1.ap-mumbai-1.anrg6ljr4twgpnaalto23gx563y5qzgg34ysy6oqeuu2tnzt7rcj3sjeaska"
   defined_tags = {
   }
